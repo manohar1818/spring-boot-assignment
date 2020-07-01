@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>User Registration</title>
+
+
+</head>
+<body>
+
+    <h1>User Registration</h1>
+<form action="#" th:action="@{/admin/save}" method="post" th:object="${user}">
+        Title:
+        <input type="text" name = title /><br/>
+        Description:
+        <input type="text" name = Description /><br/>
+        Category:
+        <input type="text" name = Category /><br/>
+        Image_link:
+        <input type="text" name = image_link /><br/>
+        Start_time:
+        <input type="datetime-local" name = start_time /><br/>
+        End_time:
+        <input type="datetime-local" name = end_time /><br/>
+        Official_link:
+        <input type="text" name = official_link /><br/>
+
+
+
+
+        <button type="submit">Add</button>     
+    </form>
+
+</body>
+</html>
